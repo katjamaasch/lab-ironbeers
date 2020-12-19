@@ -5,3 +5,39 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.tagline {
+  color: grey;
+  font-size: 1rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.buttonlink {
+  color: black;
+}
+
+.custombuttoncolor {
+  background-color: yellow;
+  width: 200px;
+  margin: 1rem 3rem 0 3rem;
+}
+
+.overallbackgroundcolor {
+  background-color: #feffea;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+.whoiswho {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.descriptionend {
+  margin-bottom: 6rem;
+}
