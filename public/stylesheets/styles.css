@@ -41,3 +41,9 @@ h1 {
 .descriptionend {
   margin-bottom: 6rem;
 }
+
+.customborder {
+  border: solid;
+  border-width: 1px;
+  border-color: blueviolet;
+}

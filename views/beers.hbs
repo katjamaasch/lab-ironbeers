@@ -3,20 +3,7 @@
 <h1>Who is Who of Beers</h1>
 </div>
 {{#each beersList}}
-<div class= "container">
-    <div class="row">
-<img src="{{image_url}}" alt="sorry, no beer for you" height= "60px" class="whoiswho"> 
-    <h2>{{name}}</h2> 
-    </div>
-    </div>
-<div class="container">
-    <div class= "row">
-    <p class="tagline">{{tagline}} </p>
-    </div>
-    <div class= "row">
-    <p class="descriptionend">{{description}} </p> 
+
+{{>beerpartial}}
 
 {{/each}}
-</div>
-</div>
-</div>

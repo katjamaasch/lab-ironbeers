@@ -1,15 +1,17 @@
 
-<div class="container">
-<img src="{{randomBeerFromApi.image_url}}" alt="sorry, no beer for you" height= "80px"> 
+{{#with randomBeerFromApi}}
 
-<h2>{{randomBeerFromApi.name}} </h2> 
-<p class= "tagline">{{randomBeerFromApi.tagline}} </p>
-<p>{{randomBeerFromApi.description}} </p>
+{{>beerpartial}}
 
-
+<div class="container customborder">
 <h3>It goes well with...</h3>
-<p>{{randomBeerFromApi.food_pairing}} </p>
+{{#each food_pairing}}
+    <ul>
+    <li>{{this}}</li>
+    </ul>
+{{/each}}
 <h3>Some tips for brewing this beer...</h3>
-<p>{{randomBeerFromApi.brewers_tips}} </p>
-
+<p>{{brewers_tips}} </p>
 </div>
+
+{{/with}}

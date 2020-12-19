@@ -37,11 +37,12 @@ app.get('/:foo', (req, res) => {
       break;
     case 'random-beers':
       punkAPI
-        .getRandom()
+        .getRandom() 
+        //returns an array with 1 object!
         .then(randomBeerFromApi => {
           console.log(randomBeerFromApi);
           res.render('random-beers', {
-            randomBeerFromApi: randomBeerFromApi[0]
+          randomBeerFromApi: randomBeerFromApi[0]
           });
         })
         .catch(error => console.log(error));
